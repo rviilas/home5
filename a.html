@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<title>home 5</title>
+<style>
+#ducky{
+	position:fixed;
+	top:0px;
+    left:0px;
+}
+#outer{
+	position:fixed;
+	left:250px;
+	top:100px;
+	height:150px;
+	width:150px;
+	background-color:white;
+	border-color:white;
+	border-style:solid;
+	border-radius: 50%;
+}
+.target{
+	position:absolute;
+	border-radius: 50%;
+}
+div:nth-child(1) {
+    height:90%;
+	width:90%;
+	background-color:#ff3300;
+	border-color:#ff3300;
+	border-style:solid;
+	left:5px;
+	top:5px;
+}
+div:nth-child(2) {
+    height:70%;
+	width:70%;
+	background-color:white;
+	border-color:white;
+	border-style:solid;
+	left:12.5%;
+	top:12.5%;
+}
+div:nth-child(3) {
+    height:55%;
+	width:55%;
+	background-color:#ff3300;
+	border-color:#ff3300;
+	border-style:solid;
+	left:20%;
+	top:20%;
+}
+div:nth-child(4) {
+    height:40%;
+	width:40%;
+	background-color:white;
+	border-color:white;
+	border-style:solid;
+	left:27.5%;
+	top:27.5%;
+}
+div:nth-child(5) {
+    height:25%;
+	width:25%;
+	background-color:#ff3300;
+	border-color:#ff3300;
+	border-style:solid;
+	left:35%;
+	top:35%;
+}
+div:nth-child(6) {
+    height:10%;
+	width:10%;
+	background-color:white;
+	border-color:white;
+	border-style:solid;
+	left:42.5%;
+	top:42.5%;
+}
+</style>
+<script type="text/javascript">
+window.onload = function() {
+	var target = document.getElementById('outer');
+	target.onclick=function(){
+	target.style.top = (Math.random()*400) + 'px';
+	target.style.left = (Math.random()*600) + 'px';
+	};
+};
+</script>
+</head>
+<body>
+<img id="ducky" src='http://enos.itcollege.ee/~rviilas/home4/duck.png' alt='Duck Dog' height='600' width='800' />
+<div id="outer">
+
+<div class="target">
+</div>
+
+<div class="target">
+</div>
+
+<div class="target">
+</div>
+
+<div class="target">
+</div>
+
+<div class="target">
+</div>
+
+<div class="target">
+</div>
+
+</div>
+
+</body>
+</html>
